@@ -1,0 +1,25 @@
+/* cards.css — re-exporta lo de sections.css para consistencia con la estructura */
+/* Las clases de cards están definidas en sections.css:
+   .project-card, .interest-card, .event-card, .morras__mini-card,
+   .social-link-card, .contact__info-card, .info-card
+*/
+
+/* ── HOVER: project card con gradiente dinámico ──
+   El fondo en hover se aplica por inline style desde el componente,
+   pero aquí van los estados base y de transición.  */
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
